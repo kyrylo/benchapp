@@ -13,6 +13,20 @@ body
     font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
+a, a:visited
+{
+    color: #509399;
+    text-decoration: none;
+    border-bottom: 1px solid #b8d5d8;
+}
+
+a:hover
+{
+    color: #995050;
+    border-bottom: 1px solid #b9a2a2;
+}
+
+
 .pseudo
 {
     color: #509399;
@@ -47,7 +61,7 @@ header h1
     font-size: 90%;
 }
 
-#share, #authors
+#share, #authors, #authors-info
 {
     margin-top: 1.3em;
     float: right;
@@ -56,6 +70,13 @@ header h1
 #authors
 {
     padding-top: 2px;
+}
+
+#authors-info
+{
+    font-size: 80%;
+    padding-top: 4px;
+    padding-right: 1em;
 }
 
 #slide
@@ -79,15 +100,21 @@ header h1
 .big_button
 {
     background-color: #509399;
+    border: none;
     font-size: 75%;
     text-decoration: none;
     color: #fff;
     position: relative;
     padding: 10px 15px;
-    background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
     border-radius: 5px;
     box-shadow: inset 0px 1px 0px #57cac1, 0px 5px 0px 0px #22534f, 0px 10px 5px #999;
     cursor: pointer;
+}
+
+.big_button:hover
+{
+    border: none;
+    color: #fff;
 }
 
 .big_button:active

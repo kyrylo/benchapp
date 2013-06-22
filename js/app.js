@@ -140,7 +140,31 @@ $(function () {
 	},
     });
 
+    var AuthorsView = Backbone.View.extend({
+	template: _.template($('#authors-template').html()),
+
+	el: $('#authors'),
+
+	events: {
+	    'click' : 'showInfo'
+	},
+
+	render: function() {
+	    this.$el.html(this.template);
+	},
+
+	showInfo: function() {
+	    var that = this;
+
+	    $('#authors-info').fadeIn();
+	    this.$el.animate({opacity: 0}, function() {
+		that.$el.css('visibility', 'hidden');
+	    });
+	},
+    });
+
     var slides = new SlideList().fetch();
 
+    new AuthorsView().render();
     new SlideView({model: slides}).render();
 });

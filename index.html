@@ -23,14 +23,18 @@
 
     <footer>
       <section id="about">
-	<section id="authors">
-	  <div class="pseudo">About</div>
-	</section>
+	<section id="authors"></section>
       </section>
 
       <section id="share">
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="kyrylosilin">Tweet</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </section>
+
+      <section id="authors-info" style="display: none">
+	The website was created by <a href="https://github.com/kyrylo/">Kyrylo Silin</a>.
+	The pictures were made by <a href="http://maxdwork.blogspot.com/">Maxim Degtyarev</a>.
+	The sounds were assembled from free sources by Kyrylo Silin.
       </section>
     </footer>
   </body>
@@ -42,6 +46,10 @@
       <div id="time"><%= time %></div>
     </div>
     <a id="next_slide" class="big_button">Fast-forward a tad…</a>
+  </script>
+
+  <script type="text/template" id="authors-template">
+    <div class="pseudo">About</div>
   </script>
 
   <script src="vendor/jquery-2.0.2.min.js"></script>
