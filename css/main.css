@@ -111,6 +111,10 @@ header h1
     border-radius: 5px;
     box-shadow: inset 0px 1px 0px #57cac1, 0px 5px 0px 0px #22534f, 0px 10px 5px #999;
     cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .big_button:hover
