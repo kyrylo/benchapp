@@ -10,6 +10,7 @@ body
 {
     font-size: 100%;
     background: #f7f6f4;
+    font-family: 'Open Sans', Tahoma, sans-serif;
 }
 
 .pseudo
@@ -27,7 +28,9 @@ body
 
 #benchapp
 {
-    font-family: 'Open Sans', Tahoma, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 12%;
 }
 
 header h1
@@ -35,7 +38,6 @@ header h1
     font-weight: normal;
     font-size: 155%;
     text-align: center;
-    margin-top: 12%;
 }
 
 #about
@@ -63,6 +65,10 @@ header h1
 #slide
 {
     text-align: center;
+}
+
+#animated
+{
     padding-left: 2.5em;
 }
 
@@ -74,7 +80,30 @@ header h1
     right: 20px;
 }
 
-#next_slide
+.big_button
 {
-    font-size: 90%;
+    background-color: #509399;
+    font-size: 75%;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 10px 15px;
+    background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px #57cac1, 0px 5px 0px 0px #22534f, 0px 10px 5px #999;
+    cursor: pointer;
+}
+
+.big_button:active
+{
+    top: 3px;
+    background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+    box-shadow: inset 0px 1px 0px #57cac1, 0px 2px 0px 0px #22534f, 0px 5px 3px #999;
+}
+
+.big_button:active::before
+{
+    top: 50%;
+    margin-top: -12px;
+    box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
 }
