@@ -44,10 +44,20 @@ header h1
     border-top: 1px solid #e3e3e3;
 }
 
-#languages, #authors
+#share, #authors
 {
     margin-top: 1.3em;
+}
+
+#authors
+{
     float: right;
+}
+
+#share
+{
+    float: left;
+    text-align: center;
 }
 
 #slide

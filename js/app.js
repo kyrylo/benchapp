@@ -132,10 +132,10 @@ $(function () {
 
 	nextSlide: function() {
 	    var that = this;
-	    this.$el.find('img').animate({opacity: 0}, function() {
+	    this.$el.find('#animated').animate({opacity: 0}, 500, function() {
 		that.render(that.model[(that.slideIdx += 1) % 48]);
 		that.$el.find('img').css('opacity', '0');
-		that.$el.find('img').animate({opacity: 1});
+		that.$el.find('img').animate({opacity: 1}, 500);
 	    });
 	},
     });
