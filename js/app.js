@@ -131,7 +131,12 @@ $(function () {
 	},
 
 	nextSlide: function() {
-	    this.render(this.model[(this.slideIdx += 1) % 48]);
+	    var that = this;
+	    this.$el.find('img').animate({opacity: 0}, function() {
+		that.render(that.model[(that.slideIdx += 1) % 48]);
+		that.$el.find('img').css('opacity', '0');
+		that.$el.find('img').animate({opacity: 1});
+	    });
 	},
     });
 
