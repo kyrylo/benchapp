@@ -1,0 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic,latin);
+@import url(sticky-footer.css);
+
+html
+{
+    overflow: auto;
+}
+
+body
+{
+    font-size: 100%;
+    background: #f7f6f4;
+}
+
+.pseudo
+{
+    color: #509399;
+    border-bottom: 1px dashed #b8d5d8;
+}
+
+.pseudo:hover
+{
+    color: #995050;
+    cursor: pointer;
+    border-bottom: 1px dashed #b9a2a2;
+}
+
+#benchapp
+{
+    font-family: 'Open Sans', Tahoma, sans-serif;
+}
+
+header h1
+{
+    font-weight: normal;
+    font-size: 155%;
+    text-align: center;
+    margin-top: 12%;
+}
+
+#about
+{
+    margin: 0 2%;
+    border-top: 1px solid #e3e3e3;
+}
+
+#languages, #authors
+{
+    margin-top: 1.3em;
+    float: right;
+}
+
+#slide
+{
+    text-align: center;
+    padding-left: 2.5em;
+}
+
+#time
+{
+    font-size: 85%;
+    position: relative;
+    top: -24px;
+    right: 20px;
+}
+
+#next_slide
+{
+    font-size: 90%;
+}
