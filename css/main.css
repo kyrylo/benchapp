@@ -101,15 +101,26 @@ header h1
 
 .big_button
 {
-    background-color: #509399;
-    border: none;
-    font-size: 75%;
+    background-color: #3bb3e0;
+    padding: 6px;
+    position: relative;
+    font-size: 12px;
     text-decoration: none;
     color: #fff;
-    position: relative;
-    padding: 10px 15px;
+    border: solid 1px #186f8f;
+    background-image: linear-gradient(bottom, #509398 0%, #3eb8e5 100%);
+    background-image: -o-linear-gradient(bottom, #509398 0%, #3eb8e5 100%);
+    background-image: -moz-linear-gradient(bottom, #509398 0%, #3eb8e5 100%);
+    background-image: -webkit-linear-gradient(bottom, #509398 0%, #3eb8e5 100%);
+    background-image: -ms-linear-gradient(bottom, #509398 0%, #3eb8e5 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #509398), color-stop(1, #3eb8e5));
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
     border-radius: 5px;
-    box-shadow: inset 0px 1px 0px #57cac1, 0px 5px 0px 0px #22534f, 0px 10px 5px #999;
     cursor: pointer;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -119,20 +130,44 @@ header h1
 
 .big_button:hover
 {
-    border: none;
     color: #fff;
+    border: solid 1px #186f8f;
+    background: #3bb3e0;
 }
 
 .big_button:active
 {
-    top: 3px;
-    background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
-    box-shadow: inset 0px 1px 0px #57cac1, 0px 2px 0px 0px #22534f, 0px 5px 3px #999;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 7px;
+    top: 1px;
+    background-image: linear-gradient(bottom, #3eb8e5 0%, #509398 100%);
+    background-image: -o-linear-gradient(bottom, #3eb8e5 0%, #509398 100%);
+    background-image: -moz-linear-gradient(bottom, #3eb8e5 0%, #509398 100%);
+    background-image: -webkit-linear-gradient(bottom, #3eb8e5 0%, #509398 100%);
+    background-image: -ms-linear-gradient(bottom, #3eb8e5 0%, #509398 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3eb8e5), color-stop(1, #509398));
 }
 
-.big_button:active::before
+.big_button::before
 {
-    top: 50%;
-    margin-top: -12px;
-    box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+    background-color: #ccd0d5;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    left: -2px;
+    top: -2px;
+    z-index: -1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    -o-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #FFF;
 }
